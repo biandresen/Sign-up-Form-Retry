@@ -1,2 +1,2 @@
-# Sign-up-Form-Retry
-A retry of the previous Sign-up Form project
+# Sign-up-Form
+Project: Sign-up Form from The Odin Project (Module: Intermediate HTML and CSS)
