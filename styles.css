@@ -23,6 +23,8 @@ body {
   padding: 0px;
   overflow-x: hidden;
   font-size: 1.2rem;
+  --themeGold: rgb(239, 171, 87);
+  --themeGray: rgb(50, 50, 50);
 }
 
 header {
@@ -32,12 +34,19 @@ header {
   margin: 0;
   padding: 0;
   height: 9vh;
-  background-color: gray;
+  background-color: var(--themeGray);
 }
 
 h1 {
+  color: var(--themeGold);
   margin: 0px 0px 0px 100px;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--themeGold);
+  font-weight: 800;
 }
 
 nav {
@@ -45,5 +54,44 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 0px 100px 0px 0px;
-  background-color: red;
+}
+
+/* .main {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+} */
+
+.heroArea {
+  /* flex-grow: 1; */
+  /* position: relative; */
+  width: 30.6vw;
+  min-width: 345px;
+  height: 91vh;
+  background: url(./img/MC.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  /* justify-content: center; */
+  align-items: start;
+}
+
+.logoArea {
+  font-size: 3.7rem;
+  width: 100%;
+  color: var(--themeGold);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 6%;
+  transform: skewY(-8deg);
+  gap: 0.3rem;
+}
+
+.logoArea img {
+  height: 25%;
+  width: 25%;
 }
