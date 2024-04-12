@@ -3,48 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign-up-Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Recruiter Service</h1>
-      <nav>
-        <div><a href="">Link1</a></div>
-        <div><a href="">Link2</a></div>
-        <div><a href="">Link3</a></div>
-      </nav>
-    </header>
-    <div class="main">
-      <div class="heroArea">
-        <div class="logoArea">
-          <img src="img/hlogo.png" alt="Halo logo" />
-          HALO
-        </div>
-        <div class="imgCredit">
-          Photo by
-          <a
-            href="https://unsplash.com/@nate_dumlao?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Nathan Dumlao</a
-          >
-          on
-          <a
-            href="https://unsplash.com/photos/black-and-gray-helmet-on-black-and-white-textile-rrVrLdYQ_18?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Unsplash</a
-          >
-        </div>
+    <div class="photoContainer">
+      <div class="logoHeader">ODIN</div>
+      <div class="logoContainer">
+        <img src="img/vegan.svg.png" alt="vegan label" />
       </div>
-      <div class="contentArea">
-        <div class="formHeading">
-          <p>*This is not a real service*</p>
-          <h2>Join today!</h2>
-          <h3>Become a part of the spartan team.</h3>
-          <h4>Don't miss out on this opportunity.</h4>
-          <h5>You <i>know</i> you want to.</h5>
-        </div>
+      <div class="photoTextContainer">
+        Learn how to thrive on a plant-based diet:
+        <p class="challengeText">
+          "Challenge22" - 22 day challenge with a mentor to guide you for free!
+        </p>
+        <a href="https://challenge22.com/">Click here to visit</a>
+      </div>
+
+      <div class="photoCreditContainer">
+        Photo by
+        <a
+          href="https://unsplash.com/@olenkasergienko?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Olena Bohovyk</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/bowl-of-assorted-foods-Z9z7l9ByRNE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </div>
+    </div>
+    <div class="formContainer">
+      <header class="formHeader">
+        <p class="warningText">*This is not a real online service!*</p>
+        <h1>
+          You know deep down that you should live healthier. Start with your
+          diet. Eat plant-based! Sign up to get started.
+        </h1>
+        <h2>You <i>know</i> you should ;)</h2>
+      </header>
+      <div class="formField">
+        <h3>Let's do this!</h3>
         <form class="formField" method="get" id="signUpForm">
-          <h2>Let's do this!</h2>
           <label for="firstName"
             >FIRST NAME *
             <input
@@ -116,11 +117,12 @@
               required
           /></label>
         </form>
+      </div>
+      <footer class="formFooter">
         <button type="submit" form="signUpFormX">Create Account</button>
         <p id="errorMessage"></p>
-        <h3 class="logInText">Already have an account? <a href="">Log in</a></h3>
-      </div>
+        <h3>Already have an account? <a href="">Log in</a></h3>
+      </footer>
     </div>
-    <footer></footer>
   </body>
 </html>
