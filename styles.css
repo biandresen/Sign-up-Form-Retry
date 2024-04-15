@@ -1,15 +1,7 @@
 @font-face {
-  font-family: "Halo Outline";
-  src: url("HaloOutline.woff2") format("woff2"),
-    url("HaloOutline.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Halo";
-  src: url("Halo.woff2") format("woff2"), url("Halo.woff") format("woff");
+  src: url("fonts/Halo.woff2") format("woff2"),
+    url("fonts/Halo.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -94,6 +86,7 @@ nav {
 }
 
 .logoArea {
+  font-family: "Halo";
   font-size: 3.7rem;
   width: 86%;
   color: var(--themeGold);
@@ -148,7 +141,7 @@ nav {
 
 .formField {
   width: 100%;
-  height: 45%;
+  height: 53%;
   margin: 1.5% 0% 1.5% 0;
   border-top: 2px groove var(--themeDarkGray);
   border-radius: 8px;
@@ -202,8 +195,8 @@ button[type="submit"] {
   font-weight: 800;
   font-size: 1.3rem;
   margin-left: 8%;
-  margin-top: 1%;
-  width: 19%;
+  margin-top: 10px;
+  width: 240px;
   height: 7%;
   background-color: var(--themeDarkGray);
   color: var(--themeGold);
@@ -218,6 +211,11 @@ button[type="submit"]:hover {
 
 .logInText {
   margin-left: 8%;
+  margin-top: 0px;
+  padding: 0;
+  position: relative;
+  bottom: 58px;
+  left: 260px;
 }
 
 #errorMessage {
@@ -281,17 +279,15 @@ button[type="submit"]:hover {
   }
 
   button[type="submit"] {
-    width: 68%;
+    width: 240px;
     margin-top: 8%;
+  }
+
+  .logInText {
+    position: static;
   }
 
   body {
     height: 1520px;
-  }
-}
-
-@media screen and (max-width: 505px) {
-  label {
-    margin-bottom: 25px;
   }
 }
