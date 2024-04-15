@@ -40,7 +40,6 @@ header {
   margin: 0;
   padding: 0;
   height: 7.7vh;
-  /* background-color: var(--themeGray); */
   border: 6px groove var(--themeDarkGray);
   background-image: linear-gradient(
     90deg,
@@ -138,8 +137,8 @@ nav {
 
 .formHeading p {
   font-size: 1rem;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 2%;
+  margin-bottom: 1%;
 }
 
 .formHeading h2 {
@@ -226,4 +225,73 @@ button[type="submit"]:hover {
   margin-top: 0.3%;
   font-size: 1rem;
   font-weight: 800;
+}
+
+@media screen and (max-width: 850px) {
+  .main {
+    flex-direction: column;
+  }
+
+  header h1,
+  header nav {
+    font-size: 0.8rem;
+  }
+
+  header h1 {
+    position: relative;
+    right: 80px;
+  }
+
+  header nav {
+    position: relative;
+    left: 50px;
+    gap: 10px;
+  }
+
+  .logoArea {
+    transform: skewY(0deg);
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 2.5rem;
+    height: 200px;
+    position: relative;
+    left: 83px;
+  }
+
+  .logoArea img {
+    height: 20%;
+    width: 20%;
+  }
+
+  .imgCredit {
+    font-size: 0.3rem;
+    position: relative;
+    right: 103px;
+  }
+
+  .formHeading > * {
+    margin: 5% 0px 5% 8%;
+  }
+
+  .formField {
+    height: 70%;
+  }
+
+  .formField h2 {
+    margin: 5% 0px 5% 8%;
+  }
+
+  button[type="submit"] {
+    width: 68%;
+    margin-top: 8%;
+  }
+
+  body {
+    height: 1520px;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  label {
+    margin-bottom: 25px;
+  }
 }

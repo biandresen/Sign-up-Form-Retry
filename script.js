@@ -5,6 +5,14 @@ const errorMessage = document.querySelector("#errorMessage");
 const myForm = document.querySelector("#signUpForm");
 
 btnSubmit.addEventListener("click", () => {
+  let inputs = myForm.querySelectorAll("input[required]");
+  for (var i = 0; i < inputs.length; i++) {
+    if (!inputs[i].value) {
+      alert("Please fill out all required fields.");
+      return;
+    }
+  }
+
   if (pwdInput.value !== pwdConfirmInput.value) {
     errorMessage.textContent = "Passwords do not match!";
     errorMessage.style.color = "red";
@@ -14,8 +22,8 @@ btnSubmit.addEventListener("click", () => {
     pwdInput.style.borderColor = "red";
     pwdConfirmInput.style.borderColor = "red";
     setTimeout(() => {
-      pwdInput.style.backgroundColor = "white";
-      pwdConfirmInput.style.backgroundColor = "white";
+      pwdInput.style.backgroundColor = "rgb(30, 30, 30)";
+      pwdConfirmInput.style.backgroundColor = "rgb(30, 30, 30)";
     }, "3000");
   } else {
     errorMessage.style.display = "block";
